@@ -55,6 +55,18 @@ public class Pemilihan2Percobaan224 {
             System.out.println("Member Tidak Valid");
         }
 
+        System.out.print("Apakah Membayar Menggunakan QRIS?\t: ");
+        boolean qris = input24.nextBoolean();
+
+        System.out.println("----------------------------------------");
+        
+        if(qris == true) {
+            System.out.println("Mendapatkan Potongan dari QRIS Rp.1000");
+            totalBayar -= 1000;
+        }
+
+        System.out.println("----------------------------------------");
+
         System.out.printf("Total Bayar \t\t\t\t: %s", totalBayar);
         System.out.println("\n----------------------------------------");
     }
